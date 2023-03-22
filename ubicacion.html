@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicacion</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <!--styles-->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!--icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--barra de navegacion-->   
+    <header>
+      <div class="interior"></div>
+     <a href="" class="logo">
+       <img src="./Logos/logo hotel oficial.png" alt=""> 
+     </a>
+     <nav class="navbar">
+      <input type="checkbox" id="check-menu" />
+        <label for="check-menu" class="menu"><i class='bx bx-menu'></i></label>
+         <ul>
+           <li>
+              <a href="./index.html">INICIO</a> 
+           </li> 
+            <li>
+              <a href="./habitaciones.html">HABITACIONES</a> 
+            </li>
+            <li>
+              <a href="./reservas.html">RESERVAS</a>
+            </li>
+            <li> 
+              <a href="./tarifas.html">TARIFAS</a>
+            </li> 
+         </ul>
+       </nav>
+       </header>
+    <section class="tittle">
+        <h2 class="tittle2">UBICACION</h2> 
+        <!--<img src="./Imagenes/ubicacion cover.jpeg" width="100%">-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Imagenes/Recepcion.jpg" class="d-block w-100" alt="..." width="100%" height="400px">
+            </div>
+            <div class="carousel-item">
+              <img src="./Imagenes/habitacion cover-3.jpg" class="d-block w-100" alt="..." width="100%" height="400px">
+            </div>
+            <div class="carousel-item">
+              <img src="./Imagenes/reserva cover.jpg" class="d-block w-100" alt="..." width="100%" height="400px">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </section>
+    </section>
+     <section class="ubicacion">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3186.4496577450445!2d-56.969181651967745!3d-37.2626750296897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1676743349334!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="direccion">
+        <ol>
+          <li>
+            Tel: (02255) 44556677
+          </li>
+          <li>
+            Email: hotel@yahoo.com 
+          </li>
+          <li>
+            Av. Costanera 900, Villa Gesell, Provincia de Buenos Aires
+          </li>
+        </ol>
+      </div>
+    </section>
+      <footer class="grid-container">
+        <h3 class="navegacion">
+         Navegacion 
+        </h3>
+        <div class="lista">
+            <ol>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                  </li>
+                  <li>
+                    <a href="./habitaciones.html">Habitaciones</a> 
+                  </li>
+                  <li>
+                    <a href="./reservas.html">Reservas</a>
+                  </li>
+                  <li> 
+                    <a href="./tarifas.html">Tarifas</a>
+                  </li>
+                  <li>
+                    <a href="./ubicacion.html">Ubicacion</a> 
+                 </li>
+            </ol>
+        </div>
+        <h3 class="pago">
+          Medios de pago
+        </h3>
+        <img src="./Imagenes/pagos-pcom.png" class="imgpago">
+        <h3 class="contacto">Contactanos</h3> 
+            <div class="contactlist">
+            <ol>
+              <li>
+                Tel: (02255) 44556677
+              </li>
+              <li>
+                Email: hotel@yahoo.com 
+              </li>
+              <li>
+                Av. Costanera 900, Villa Gesell, Provincia de Buenos Aires
+              </li>
+            </ol>
+          </div>
+          <h3 class="redes">Redes sociales</h3>
+          <div class="redesicon">
+            <label for="instagram"><i class='bx bxl-instagram'></i></label>
+            <label for="facebook"><i class='bx bxl-facebook-square'></i></label>
+            <label for="tiktok"><i class='bx bxl-tiktok' ></i></box-icon></label>
+          </div>
+          <div class="newsletter">
+          </span>
+          <input type="email" placeholder="newsletter">
+          <button>Suscribirse</button>
+        </div>
+    </footer>
+    <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
