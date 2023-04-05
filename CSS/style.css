@@ -5,407 +5,559 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
-  }
-body{
-    background-color: #FCFCEF;
-    height: 100vh;
-    width: 100%;
-  }
-header{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #FCFCEF;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
   width: 100%;
   height: 90px;
   background-color: #C43000;
-  } 
-.interior{
+}
+header .interior {
   max-width: 100%;
   padding: 0 10px;
   margin: auto;
-}   
-.logo{
+}
+header .logo {
   float: left;
   padding: 5px 20px 0;
-  }
-.logo img{
-   height: 80px;
-  } 
-.logo img:hover{
-   transform: scale(1.5);
-  }
-.navbar{
-    float: right;
-    display: flex;
-    align-items: center;
-    min-height: 90px;
-    z-index: 1000;
-  } 
-.navbar ul{
+}
+header .logo img {
+  height: 80px;
+  border-radius: 5px;
+  transform: translateX(10px, 20px);
+}
+header .logo img:hover {
+  transform: scale(1.5);
+}
+header .navbar {
+  float: right;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  z-index: 1000;
+}
+header .navbar ul {
   list-style: none;
   padding: 0 10px;
-  }
-.navbar ul li{
+}
+header .navbar ul li {
   display: inline-block;
   position: relative;
-  transition: .3 linear;
+  transition: 0.3 linear;
   z-index: 1000;
-  }
-.navbar ul li:hover{
+}
+header .navbar ul li:hover {
   transform: scale(1.3);
-  }
-.navbar ul li a{
+}
+header .navbar ul li a {
   color: #FCFCEF;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
   padding: 12px 20px;
-  transition: .3 linear;
-  }
-.navbar ul li a:hover{
+  transition: 0.3 linear;
+}
+header .navbar ul li a:hover {
   color: black;
   transform: scale(1.3);
-  }
-  #check-menu, label.menu{
-    display: none;
+}
+header #check-menu, header label.menu {
+  display: none;
+}
 
-  }  
-.body{
+.titulo h1 {
+  font-family: nadilla;
+  font-style: italic;
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+/*inicio*/
+.contenido {
+  padding-bottom: 25px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 400px repeat(2,200px);
-  gap: 15px;
-  grid-template-areas:
-  "descripcion video"
-  "piscina p2"
-  "piscina logo2";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 75px 100px 320px 55px 400px repeat(3, 55px);
+  gap: 5px;
+  grid-template-areas: "titlehab none titleubi" "descripcion descripcion p2" "simple suite deluxe" "reservar1 reservar2 reservar3" "video video video" "servicios servicios servicios" "wifi bath tv" "bank aire cafe";
 }
-.piscina{
-  grid-area: piscina;
-  width: 500px;
-  margin: 15px;
-  padding: 20px;
-}
-.video{
-  grid-area: video;
-  width: 500px;
-  margin: 15px;
-  padding: 20px;
-}
-.descripcion{
-  grid-area: descripcion;
-   width: 560px;
-   margin: 15px;
-   padding: 20px;
-   display: flex;
-}
-.p2{
-  grid-area: p2;
-  width: 500px;
-  margin: 15px;
-  padding: 20px;
-}
-.logo2{
-  grid-area: logo2;
-  width: 200px;
-  height: 150px;
-  margin: 15px;
-  padding: 20px;
+.contenido .titlehab {
+  grid-area: titlehab;
+  padding-left: 15px;
+  font-size: 25px;
   display: flex;
   justify-self: center;
+  align-self: center;
 }
-main .tarifas {
-   padding: 150px;
-   width: 300px;
-   display: grid;  
-   justify-content: center;
-   flex-grow: unset;
-   }
-.tarifas{
-  padding: 50px;
-  margin: 50px;
-  color:#C43000;
-  size: 200px;
-  position: relative;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}   
-div .imgtarifas{
-  padding: 15px;
-  width: 200px;
-  margin: 50px;
-  position: relative;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}   
-main { 
-  padding: 15px;
-  margin: 50px; 
-  box-sizing: content-box;
-  display: table-cell;
-  text-align: center;
-  position: absolute;   
+.contenido .titleubi {
+  grid-area: titleubi;
+  padding-left: 15px;
+  font-size: 25px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
 }
-iframe{
+.contenido .descripcion {
+  grid-area: descripcion;
+  padding: 25px;
   width: 500px;
-  height: 400px;
-  display: block;
-  justify-content: end;
+  display: flex;
+  justify-self: start;
+  align-self: center;
 }
-main, span {
-   flex-direction: row;
+.contenido .p2 {
+  grid-area: p2;
+  display: flex;
+  justify-self: center;
+  align-self: center;
 }
-section img{
-  position:relative;
-  padding-top: 0;
-  }
- main{
-  padding-top: 10px;
- }
- .grid-container{
-  background-color: #C43000;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 60px 170px 50px;
-  gap: 5px;
-  grid-template-areas:
-  "navegacion pago contacto redes"
-  "lista imgpago contactlist redesicon"
-  "newsletter newsletter newsletter newsletter";
-}
-footer section div ol li{
- color: black; 
-}
-.navegacion{
-grid-area: navegacion;  
-color:black;
-display: flex;
-align-self: center;
-justify-self: start;
-}
-.pago{
-grid-area: pago;  
-color:black;
-display: flex; 
-align-self: center;
-justify-self: start;
-}
-.contacto{
-grid-area: contacto;  
-color:black; 
-display: flex;
-align-self: center;
-justify-self: start;
-}
-.redes{
-grid-area: redes;  
-color:black; 
-display: flex;
-align-self: center;
-justify-self: start;
-}
-.redesicon{
-  grid-area: redesicon;
-  color: white;
-  width: 100px;
-  height: 100px;
+.contenido .simple {
+  grid-area: simple;
+  width: 300px;
+  height: 200px;
   display: flex;
   align-self: center;
   justify-self: center;
 }
-.newsletter{
-grid-area: newsletter;  
-display: flex;
-align-self: center;
-justify-self: center;
+.contenido .simple:hover {
+  transform: scale(1.5);
 }
-div ol li a{
-  color:white; 
+.contenido .suite {
+  grid-area: suite;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+.contenido .suite:hover {
+  transform: scale(1.5);
+}
+.contenido .deluxe {
+  grid-area: deluxe;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+.contenido .deluxe:hover {
+  transform: scale(1.5);
+}
+.contenido .reservar1 {
+  grid-area: reservar1;
+  display: flex;
+  align-self: start;
+  justify-self: center;
+}
+.contenido .reservar1:hover {
+  transform: scale(1.5);
+}
+.contenido .reservar2 {
+  grid-area: reservar2;
+  display: flex;
+  align-self: start;
+  justify-self: center;
+}
+.contenido .reservar2:hover {
+  transform: scale(1.5);
+}
+.contenido .reservar3 {
+  grid-area: reservar3;
+  display: flex;
+  align-self: start;
+  justify-self: center;
+}
+.contenido .reservar3:hover {
+  transform: scale(1.5);
+}
+.contenido a {
+  color: white;
+}
+.contenido .video {
+  grid-area: video;
+  width: 400px;
+  height: 390px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+.contenido .servicios {
+  grid-area: servicios;
+  padding-left: 15px;
+  font-size: 25px;
+}
+.contenido .wifi {
+  grid-area: wifi;
+  padding-left: 15px;
+}
+.contenido .bath {
+  grid-area: bath;
+  padding-left: 15px;
+}
+.contenido .tv {
+  grid-area: tv;
+  padding-left: 15px;
+}
+.contenido .bank {
+  grid-area: bank;
+  padding-left: 15px;
+}
+.contenido .aire {
+  grid-area: aire;
+  padding-left: 15px;
+}
+.contenido .cafe {
+  grid-area: cafe;
+  padding-left: 15px;
+}
+
+footer {
+  background-color: #C43000;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 45px 170px 50px;
+  gap: 5px;
+  grid-template-areas: "navegacion pago contacto redes" "lista imgpago contactlist redesicon" "newsletter newsletter newsletter newsletter";
+}
+footer .navegacion {
+  grid-area: navegacion;
+  color: black;
+  padding: 15px;
   display: flex;
   align-self: center;
   justify-self: start;
 }
-div ol li a:hover{
-  color: blue;
-}
-.imgpago{
-  width:150px;
-  display: flex;
-  align-self: center;justify-self: start;
-}
-.contactlist{
+footer footer .lista {
   color: white;
   display: flex;
-  align-self: center;justify-self: start;
+  align-self: center;
+  justify-self: start;
 }
-h3{
+footer .pago {
+  grid-area: pago;
+  color: black;
+  display: flex;
+  align-self: center;
+  justify-self: start;
+}
+footer .contacto {
+  grid-area: contacto;
+  padding-left: 30px;
+  color: black;
+  display: flex;
+  align-self: center;
+  justify-self: start;
+}
+footer .redes {
+  grid-area: redes;
+  color: black;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+footer .redesicon {
+  grid-area: redesicon;
+  color: white;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+footer .instagram {
+  width: 50px;
+  height: 50px;
+}
+footer label {
+  width: 45px;
+  height: 45px;
+}
+footer a {
+  color: white;
+}
+footer .newsletter {
+  grid-area: newsletter;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+footer .imgpago {
+  width: 150px;
+  display: flex;
+  align-self: center;
+  justify-self: start;
+}
+footer .contactlist {
+  color: white;
+  display: flex;
+  align-self: center;
+  justify-self: start;
+}
+footer h3 {
   font-size: 20px;
   display: flex;
   justify-self: center;
-
 }
-.imghabitaciones{
-  margin: 30px;
+
+/*galeria*/
+.imggaleria {
   display: grid;
   grid-template-columns: repeat(3, 350px);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 10px;
-  grid-template-areas: 
-  "hab1 hab2 hab3"
-  "hab4 hab5 hab6"
-  "hab7 hab8 hab9"
-  "hab10 hab11 hab12";
+  grid-template-rows: repeat(5, 250px);
+  gap: 20px;
+  margin-left: 150px;
+  margin-bottom: 55px;
+  grid-template-areas: "hab2 hab3 hab5" "hab6 hab7 hab9" "hab10 hab11 hab12" "comedor piscina reserva" "tarifa frente patio";
 }
-.hab1{
-  grid-area: hab1;
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
-}
-.hab2{
+.imggaleria .hab2 {
   grid-area: hab2;
+  width: 350px;
+  height: 250px;
   border-radius: 5px;
-  width: 100%;
-  height: 100%;
 }
-.hab3{
+.imggaleria .hab2:hover {
+  transform: scale(1.5);
+}
+.imggaleria .hab3 {
   grid-area: hab3;
+  width: 350px;
+  height: 250px;
   border-radius: 5px;
-  width: 100%;
-  height: 100%;
 }
-.hab4{
-  grid-area: hab4;
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
+.imggaleria .hab3:hover {
+  transform: scale(1.5);
 }
-.hab5{
+.imggaleria .hab5 {
   grid-area: hab5;
+  width: 350px;
+  height: 250px;
   border-radius: 5px;
-  width: 100%;
-  height: 100%;
 }
-.hab6{
+.imggaleria .hab5:hover {
+  transform: scale(1.5);
+}
+.imggaleria .hab6 {
   grid-area: hab6;
+  width: 350px;
+  height: 250px;
   border-radius: 5px;
-  width: 100%;
-  height: 100%;
 }
-.hab7{
+.imggaleria .hab6:hover {
+  transform: scale(1.5);
+}
+.imggaleria .hab7 {
   grid-area: hab7;
+  width: 350px;
+  height: 250px;
   border-radius: 5px;
-  width: 100%;
-  height: 100%;
 }
-.hab8{
-  grid-area: hab8;
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
+.imggaleria .hab7:hover {
+  transform: scale(1.5);
 }
-.hab9{
+.imggaleria .hab9 {
   grid-area: hab9;
+  width: 350px;
+  height: 250px;
   border-radius: 5px;
-  width: 100%;
-  height: 100%;
 }
-.hab10{
+.imggaleria .hab9:hover {
+  transform: scale(1.5);
+}
+.imggaleria .hab10 {
   grid-area: hab10;
+  width: 350px;
+  height: 250px;
   border-radius: 5px;
-  width: 100%;
-  height: 100%;
 }
-.hab11{
+.imggaleria .hab10:hover {
+  transform: scale(1.5);
+}
+.imggaleria .hab11 {
   grid-area: hab11;
+  width: 350px;
+  height: 250px;
   border-radius: 5px;
-  width: 100%;
-  height: 100%;
 }
-.hab12{
+.imggaleria .hab11:hover {
+  transform: scale(1.5);
+}
+.imggaleria .hab12 {
   grid-area: hab12;
+  width: 350px;
+  height: 250px;
   border-radius: 5px;
-  width: 100%;
-  height: 100%;
 }
-.tarifas{
+.imggaleria .hab12:hover {
+  transform: scale(1.5);
+}
+.imggaleria .comedor {
+  grid-area: comedor;
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
+.imggaleria .comedor:hover {
+  transform: scale(1.5);
+}
+.imggaleria .piscina {
+  grid-area: piscina;
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
+.imggaleria .piscina:hover {
+  transform: scale(1.5);
+}
+.imggaleria .reserva {
+  grid-area: reserva;
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
+.imggaleria .reserva:hover {
+  transform: scale(1.5);
+}
+.imggaleria .tarifa {
+  grid-area: tarifa;
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
+.imggaleria .tarifa:hover {
+  transform: scale(1.5);
+}
+.imggaleria .frente {
+  grid-area: frente;
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
+.imggaleria .frente:hover {
+  transform: scale(1.5);
+}
+.imggaleria .patio {
+  grid-area: patio;
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
+.imggaleria .patio:hover {
+  transform: scale(1.5);
+}
+
+/*tarifas*/
+.tarifas {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: 200px 100px;
-  gap: 30px;
-  grid-template-areas: 
-  "tarifa1 tarifa2 tarifa3"
-  "tarifa4 tarifa5 tarifa6";
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: 250px 60px;
+  gap: 20px;
+  margin-left: 150px;
+  margin-bottom: 55px;
+  grid-template-areas: "tarifa1 tarifa2 tarifa3" "boton1 boton2 boton3";
 }
-.tarifa1{
+.tarifas .tarifa1 {
   grid-area: tarifa1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-self: center;
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
 }
-.tarifa2{
+.tarifas .tarifa2 {
   grid-area: tarifa2;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-self: center;
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
 }
-.tarifa3{
+.tarifas .tarifa3 {
   grid-area: tarifa3;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-self: center;
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
 }
-p .tarifa4{
-  grid-area: tarifa4;
-  width: 100%;
-  color: black;
+.tarifas .boton1 {
+  grid-area: boton1;
   display: flex;
-  align-self: center;
   justify-self: center;
 }
-p .tarifa5{
-  grid-area: tarifa5;
-  width: 100%;
-  color:black;
+.tarifas .boton1:hover {
+  transform: scale(1.2);
+}
+.tarifas .boton2 {
+  grid-area: boton2;
   display: flex;
-  align-self: center;
   justify-self: center;
 }
-p .tarifa6{
-  grid-area: tarifa6;
-  color: black;
+.tarifas .boton2:hover {
+  transform: scale(1.2);
+}
+.tarifas .boton3 {
+  grid-area: boton3;
   display: flex;
-  align-self: center;
   justify-self: center;
 }
-.ubicacion{
-  margin: 50px;
-  display: grid;
-  grid-template-columns: 600px 400px;
-  grid-template-rows: 500px;
-  gap: 50px;
-  grid-template-areas: "map direccion";
+.tarifas .boton3:hover {
+  transform: scale(1.2);
 }
-.map{
-  grid-area: map;
+.tarifas a {
+  color: white;
+}
+
+/*ubicacion*/
+.ubicacion {
   display: flex;
+  justify-content: space-around;
+  margin-left: 150px;
+  margin-bottom: 55px;
+}
+.ubicacion .direccion {
+  display: flex;
+  justify-self: center;
   align-self: center;
 }
-.direccion{
-  grid-area: direccion;
-  font-size: 25px;
-  font-style: italic;
-  color: black;
+
+/*reervas*/
+.formulario {
+  width: auto;
   display: flex;
+  margin-left: 150px;
+  margin-bottom: 55px;
+  padding: 15px;
+  justify-content: space-around;
+}
+.formulario .logo {
+  width: 500px;
+  display: flex;
+  height: 300px;
+  border-radius: 25px;
   align-self: center;
 }
-.mb-3{
-  margin: 30px; 
+
+/*animaciones*/
+.animate__animated.animate__fadeInRight {
+  --animate-duration: 2s;
 }
-@media screen and (max-width:360px) {
-  .navbar ul{
+
+/*mobile*/
+@media screen and (max-width: 360px) {
+  header {
+    /*titulo*/
+  }
+  header .logo {
+    float: right;
+  }
+  header .navbar {
+    float: left;
+    display: flex;
+    background-color: #C43000;
+  }
+  header .navbar ul {
     display: none;
     position: absolute;
     height: 100hv;
@@ -413,159 +565,439 @@ p .tarifa6{
     width: 100%;
     flex-direction: column;
     background-color: #C43000;
-    justify-content: space-around;
+    justify-content: start;
   }
-  label.menu {
+  header .navbar label.menu {
     display: block;
     font-size: 1.7em;
-    color:#FCFCEF;
-    cursor: pointer;
+    color: #FCFCEF;
+    background-color: #C43000;
   }
-  #check-menu:checked ~ ul{
-    display: block; 
+  header .navbar #check-menu:checked ~ ul {
+    display: block;
+    background-color: #C43000;
   }
-  .navbar{
-    float: left;
-    display: flex;}
-  .logo{ 
-    float: right;
-  }
-  .navbar ul li{
+  header .navbar .navbar ul li {
     background-color: #C43000;
     width: 100vh;
   }
-  
-  .body{
+  header .titulo h1 {
+    font-family: nadilla;
+    font-style: italic;
+    font-size: 55px;
+    height: 75px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  /*inicio*/
+  .contenido {
     display: grid;
     width: 100%;
-    grid-template-columns: 320px;
-    grid-template-rows: 840px 360px 200px 210px 200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 55px 130px 55px 55px repeat(3, 200px 55px) 320px 55px repeat(6, 50px);
     gap: 5px;
-    grid-template-areas:
-    "descripcion"
-    "video"
-    "p2"
-    "piscina" 
-    "logo2";
+    grid-template-areas: "titlehab" "descripcion" "titleubi" "p2" "simple" "reservar1" "suite" "reservar2" "deluxe" "reservar3" "video" "servicios" "wifi" "bath" "tv" "bank" "aire" "cafe";
   }
-  .descripcion{
+  .contenido .titlehab {
+    grid-area: titlehab;
+    padding-left: 15px;
+    font-size: 25px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  .contenido .titleubi {
+    grid-area: titleubi;
+    padding-left: 15px;
+    font-size: 25px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  .contenido .descripcion {
     grid-area: descripcion;
-    margin: 15px;
-    padding: 20px;
+    padding: 10px;
     width: 320px;
     display: flex;
     justify-self: center;
     align-self: center;
   }
-  .video{
-    grid-area: video;
-    margin: 15px;
-    width: 320px;
-    padding: 20px;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-  }
-  .p2{
+  .contenido .p2 {
     grid-area: p2;
-    margin: 15px;
-    padding: 20px;
+    padding: 10px;
     width: 320px;
     display: flex;
     justify-self: center;
     align-self: center;
   }
-  .piscina{
-    grid-area: piscina;
-    margin: 15px;
-    padding: 20px;
-    width: 320px;
+  .contenido .simple {
+    grid-area: simple;
+    width: 300px;
     height: 200px;
     display: flex;
-    justify-self: center;
     align-self: center;
+    justify-self: center;
   }
-  .logo2{
-    grid-area: logo2;
-    margin: 15px;
-    padding: 20px;
-    height: 150px;
+  .contenido .suite {
+    grid-area: suite;
+    width: 300px;
+    height: 200px;
     display: flex;
     align-self: center;
     justify-self: center;
-    
-
   }
-  .grid-container{
+  .contenido .deluxe {
+    grid-area: deluxe;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  .contenido .reservar1 {
+    grid-area: reservar1;
+    display: flex;
+    align-self: start;
+    justify-self: center;
+  }
+  .contenido .reservar2 {
+    grid-area: reservar2;
+    display: flex;
+    align-self: start;
+    justify-self: center;
+  }
+  .contenido .reservar3 {
+    grid-area: reservar3;
+    display: flex;
+    align-self: start;
+    justify-self: center;
+  }
+  .contenido a {
+    color: white;
+  }
+  .contenido .video {
+    grid-area: video;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  .contenido .servicios {
+    grid-area: servicios;
+    font-size: 25px;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  .contenido .wifi {
+    grid-area: wifi;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  .contenido .bath {
+    grid-area: bath;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  .contenido .tv {
+    grid-area: tv;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  .contenido .bank {
+    grid-area: bank;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  .contenido .aire {
+    grid-area: aire;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  .contenido .cafe {
+    grid-area: cafe;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  /*footer*/
+  .footer {
     background-color: #C43000;
     display: grid;
     grid-template-columns: 320px;
-    grid-template-rows: 60px 170px 50px;
+    grid-template-rows: 40px 150px 50px;
     gap: 5px;
-    grid-template-areas:
-    "navegacion" 
-    "lista"
-    "pago"
-    "imgpago" 
-    "contacto" 
-    "contactlist" 
-    "redes"
-    "redesicon"
-    "newsletter";
+    grid-template-areas: "navegacion" "lista" "pago" "imgpago" "contacto" "contactlist" "redes" "redesicon" "newsletter";
   }
-  .ubicacion{
+  .footer .navegacion {
+    grid-area: navegacion;
+    color: black;
+    padding-left: 15px;
+    padding-top: 15px;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .lista {
+    color: white;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .pago {
+    grid-area: pago;
+    color: black;
+    padding-left: 15px;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .imgpago {
+    width: 150px;
+    padding-left: 15px;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .contacto {
+    grid-area: contacto;
+    padding-left: 15px;
+    color: black;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .contactlist {
+    color: white;
+    padding-left: 15px;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .redes {
+    grid-area: redes;
+    color: black;
+    padding-left: 15px;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .redesicon {
+    grid-area: redesicon;
+    color: white;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  .footer a {
+    color: white;
+  }
+  .footer .newsletter {
+    grid-area: newsletter;
+    padding-bottom: 20px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  /*ubicacion*/
+  .ubicacion {
     display: grid;
     margin: 20px;
     grid-template-columns: 320px;
     grid-template-rows: 400px 250px;
     gap: 5px;
-    grid-template-areas:
-    "map"
-    "direccion";
+    grid-template-areas: "map" "direccion";
   }
-  .map{
+  .map {
     width: 320px;
     height: 320px;
   }
-  .tarifas{
+  /*galeria*/
+  .imggaleria {
+    margin: 0;
+    padding-left: 5px;
+    padding-bottom: 20px;
     display: grid;
-    margin: 20px;
-    grid-template-columns: 320px;
-    grid-template-rows: 300px 100px 300px 100px 300px 100px;
-    gap: 5px;
-    grid-template-areas:
-    "tarifa1"
-    "tarifa4"
-    "tarifa2"
-    "tarifa5"
-    "tarifa3"
-    "tarifa6"
+    grid-template-columns: repeat(2, 170px);
+    grid-template-rows: repeat(8, 150px);
+    gap: 10px;
+    grid-template-areas: "hab2 hab3" "hab5 hab6" "hab7 hab9" "hab10 hab11" "hab12 comedor" "piscina reserva" "tarifa frente" "patio patio";
   }
-  .tarifa4, .tarifa5, .tarifa6 {
-    background-color: #C43000;
-    color: white;
-    font-style: italic;
-    height: 60px;
-    width: 300px;
+  .imggaleria .hab2 {
+    grid-area: hab2;
+    width: 170px;
+    height: 150px;
     border-radius: 5px;
   }
-  .imghabitaciones{
-    margin: 20px;
+  .imggaleria .hab3 {
+    grid-area: hab3;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab5 {
+    grid-area: hab5;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab6 {
+    grid-area: hab6;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab7 {
+    grid-area: hab7;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab9 {
+    grid-area: hab9;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab10 {
+    grid-area: hab10;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab11 {
+    grid-area: hab11;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab12 {
+    grid-area: hab12;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .comedor {
+    grid-area: comedor;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .piscina {
+    grid-area: piscina;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .reserva {
+    grid-area: reserva;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .tarifa {
+    grid-area: tarifa;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .frente {
+    grid-area: frente;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .patio {
+    grid-area: patio;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  /*reservas*/
+  .formulario {
+    margin: 0;
     display: grid;
-    grid-template-columns: 320px;
-    grid-template-rows: repeat(12, 1fr);
-    gap: 10px;
-    grid-template-areas: 
-    "hab1" 
-    "hab2" 
-    "hab3"
-    "hab4" 
-    "hab5" 
-    "hab6"
-    "hab7" 
-    "hab8" 
-    "hab9"
-    "hab10" 
-    "hab11" 
-    "hab12";}
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px 220px;
+    gap: 5px;
+    grid-template-areas: "tabla" "logoreserva";
+  }
+  .formulario .tabla {
+    grid-area: tabla;
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  .formulario .logoreserva {
+    grid-area: logoreserva;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  .formulario .logoreserva img {
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+  }
+  /*tarifas*/
+  .tarifas {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 250px 60px);
+    gap: 20px;
+    grid-template-areas: "tarifa1" "boton1" "tarifa2" "boton2" "tarifa3" "boton3";
+  }
+  .tarifas .tarifa1 {
+    grid-area: tarifa1;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  .tarifas .tarifa2 {
+    grid-area: tarifa2;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  .tarifas .tarifa3 {
+    grid-area: tarifa3;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  .tarifas .boton1 {
+    grid-area: boton1;
+    display: flex;
+    justify-self: center;
+  }
+  .tarifas .boton2 {
+    grid-area: boton2;
+    display: flex;
+    justify-self: center;
+  }
+  .tarifas .boton3 {
+    grid-area: boton3;
+    display: flex;
+    justify-self: center;
+  }
+  .tarifas a {
+    color: white;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

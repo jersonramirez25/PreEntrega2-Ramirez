@@ -4,26 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apart-hotel frente al mar en Villa Gesell">
+    <meta name="keywords" content="Hotel, hospedaje, turismo, Villa Gesell, costa Atlantica">
+    <title>Apart-Hotel</title>
     <!--bootstrap-->
     <link rel="stylesheet" href="./CSS/bootstrap.css">
     <!--styles-->
     <link rel="stylesheet" href="./CSS/style.css"> 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!--animaciones-->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 </head>
 <body>
     <!--barra de navegacion-->   
     <header>
+      <!--logo-->
       <a href="" class="logo">
-        <img src="./Logos/logo hotel oficial.png" alt="">
+        <img src="./Logos/logo hotel oficial.png" alt="" class="animate__animated animate__fadeInRight animate__delay-1s">
       </a>
+      <!--navbar-->
       <nav class="navbar">
         <input type="checkbox" id="check-menu" />
         <label for="check-menu" class="menu"><i class='bx bx-menu'></i></label>
         <ul>
              <li>
-               <a href="./habitaciones.html">HABITACIONES</a> 
+               <a href="./habitaciones.html">GALERIA</a> 
              </li>
              <li>
                <a href="./reservas.html">RESERVAS</a>
@@ -37,10 +47,7 @@
           </ul>
         </nav>
         </header>
-     <!--imagen de recepcion-->   
-    <!--<section class="recepcion">
-     <img src="./Imagenes/Recepcion.jpg" alt="Recepcion" width="100%" height="500px">
-    </section>-->
+     <!--imagen de recepcion-->  
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -67,35 +74,221 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-</section>
-</section>
+    <!--titulo del hotel-->
+    <div class="titulo">
+      <h1>Apart Hotel</h1>
+    </div>
     <!--descripcion del hotel-->
-    <section class="body">
+    <section class="contenido">
+      <h3 class="titlehab">
+        <b>HABITACIONES</b>
+      </h3>
         <p class="descripcion">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto distinctio non molestias autem enim delectus minima repudiandae, quod veniam perspiciatis dolorem aliquid, maiores doloremque. Sed consequuntur ab tenetur nam possimus quas veritatis nobis, doloremque excepturi qui tempore officiis ut maxime rerum nemo. Eum sequi dignissimos, tempore eligendi libero, earum laboriosam est mollitia quae saepe maiores! Dignissimos nemo mollitia delectus natus excepturi architecto, voluptatibus amet at fugiat ut corrupti. Repudiandae cupiditate, dolorem provident doloremque consequatur pariatur dignissimos unde tempore voluptas, sed ex repellat nobis possimus alias at dolor doloribus aperiam ratione quo voluptatum? Eligendi in quisquam autem ducimus tenetur modi asperiores et voluptate omnis recusandae laudantium, aspernatur tempora numquam dolorum. Nobis maxime hic ullam, dolorum totam harum et deserunt nostrum labore cum aliquid alias tempore obcaecati pariatur natus veniam placeat eum aliquam fugiat. Ex eaque neque praesentium. Explicabo nihil corporis aspernatur? Nostrum, delectus aliquid maxime ex illo corporis ullam fugiat animi!
-        </p>
-        <iframe class="video"
+          Nuestro hotel cuenta con 50 habitaciones superiores en las que disfrutará de la magnífica vista al mar. 25 suites con  vistas al oceano atlantico y 7 departamentos familiares.
+        </p>  
+      <h3 class="titleubi">
+      <b>UBICACION</b>
+      </h3>
+        <p class="p2">
+          Ubicado frente a la playa y a metros del centro de la ciudad.
+          </p>
+          <!--habitacion simple-->
+          <section class="simple">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" class="simple">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" class="simple">
+                <img src="./Imagenes/habitaciones/8.jpg" class="d-block w-100" alt="..." width="300px"
+                height="200px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Simple</h5>
+                </div>
+              </div>
+              <div class="carousel-item" class="simple">
+                <img src="./Imagenes/habitaciones/baño 8.jpg" class="d-block w-100" alt="..." width="300px"
+                height="200px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Simple</h5>
+                </div>
+              </div>
+              <div class="carousel-item" class="simple">
+                <img src="./Imagenes/habitaciones/vista 8.jpg" class="d-block w-100" alt="..." width="300px"
+                height="200px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Simple</h5>             
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+          <!--habitacion suite-->
+        <section class="suite"> 
+          <div 
+          id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" class="suite">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Imagenes/habitaciones/4.jpg" class="d-block w-100" alt="..." width="300px"
+                height="200px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Suite</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Imagenes/habitaciones/baño 4.jpg" class="d-block w-100" alt="..." width="300px"
+                height="200px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Suite</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Imagenes/habitaciones/vista 4.jpg" class="d-block w-100" alt="..." width="300px"
+                height="200px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Suite</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>   
+          <!--habitacion deluxe-->
+        <section class="deluxe">  
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" class="deluxe">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Imagenes/habitaciones/1.jpg" class="d-block w-100" alt="..." width="300px"
+                height="200px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Deluxe</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Imagenes/habitaciones/baño 1.jpg" class="d-block w-100" alt="..." width="300px"
+                height="200px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Deluxe</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Imagenes/habitaciones/vista 1.jpg" class="d-block w-100" alt="..." width="300px"
+                height="200px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Deluxe</h5>                 
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> 
+        </section>
+    <div class="reservar1">
+        <button type="button" class="btn btn-danger">
+          <a href="./reservas.html">Reservar            
+          </a>
+        </button>
+    </div>    
+     <div class="reservar2">  
+        <button type="button" class="btn btn-danger">
+        <a href="./reservas.html">Reservar            
+        </a>
+        </button>
+      </div> 
+      <div class="reservar3">  
+        <button type="button" class="btn btn-danger">
+        <a href="./reservas.html">Reservar            
+        </a>
+      </button>
+      </div>
+    
+    <div class="servicios">
+     <h3><b>Servivios</b></h3>
+    </div>
+    <div class="wifi"> 
+        <label for="wifi">
+        <i class='bx bx-wifi'></i> 
+        <h4>Wifi</h4>
+       </label>
+    </div>
+    <div class="bath">
+       <label for="bath">
+        <i class='bx bx-bath'></i>
+        <h4>Baño privado</h4>
+       </label>
+    </div>
+    <div class="tv"> 
+        <label for="tv">
+        <i class='bx bx-tv'></i>
+        <h4>Smart Tv</h4>
+        </label>
+    </div>
+    <div class="bank">
+        <label for="bank">
+        <i class='bx bxs-bank'></i>
+        <h4>Caja de seguridad</h4>
+        </label>
+    </div>  
+    <div class="aire">
+        <label for="aire">
+        <i class='bx bx-cloud-snow'></i>
+        <h4>Aire acondicionado</h4>
+        </label> 
+    </div>
+    <div class="cafe">
+        <label for="cafe">
+        <i class='bx bxs-coffee-alt'></i>
+        <h4>Desayuno incluido</h4>
+        </label> 
+    </div>
+    <iframe class="video"
         src="https://www.youtube.com/embed/6v25Toe43Sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
       </iframe>
-        <p class="p2">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit doloremque fuga earum quaerat enim saepe exercitationem, ex officia, ipsa nostrum numquam iure dolores et soluta reprehenderit doloribus. Mollitia quo iste aspernatur natus neque dolorem quidem!
-          </p>
-      <img src="./Imagenes/piscina-012.jpg" alt="" class="piscina">  
-      <a href="" class="logo2">
-        <img src="./Logos/logo hotel oficial.png" alt=""> 
-      </a>
-    </section>   
-    <footer class="grid-container">
+    </section>
+    <footer class="footer">
       <h3 class="navegacion">
        Navegacion 
       </h3>
       <div class="lista">
           <ol>
               <li>
-                  <a href="./index.html">Inicio</a>
+                  <a href="./index.html" >Inicio</a>
                 </li>
                 <li>
-                  <a href="./habitaciones.html">Habitaciones</a> 
+                  <a href="./habitaciones.html">Galeria</a> 
                 </li>
                 <li>
                   <a href="./reservas.html">Reservas</a>
@@ -127,10 +320,13 @@
           </ol>
         </div>
         <h3 class="redes">Redes sociales</h3>
-        <div class="redesicon">
-          <label for="instagram"><i class='bx bxl-instagram'></i></label>
+      <div class="redesicon">
+        <div class="instagram">
+          <label for="instagram"><i class='bx bxl-instagram' class="instagram1"></i></label>
+        </div>
           <label for="facebook"><i class='bx bxl-facebook-square'></i></label>
           <label for="tiktok"><i class='bx bxl-tiktok' ></i></box-icon></label>
+          <label for="youtube" class="youtube"><i class='bx bxl-youtube'></i></label>
         </div>
         <div class="newsletter">
         </span>

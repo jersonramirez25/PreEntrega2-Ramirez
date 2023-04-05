@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas</title>
+    <meta name="description" content="Apart-hotel frente al mar en Villa Gesell">
+    <meta name="keywords" content="Hotel, hospedaje, reservas, turismo, Villa Gesell, costa Atlantica">
+    <title>Apart-Hotel Reservas</title>
       <!--bootstrap-->
     <link rel="stylesheet" href="./CSS/bootstrap.css">
       <!--styles-->
       <link rel="stylesheet" href="./CSS/style.css">
     <!--icons-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+    <!--animaciones-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> 
 </head>
 <body>
     <!--barra de navegacion-->   
     <header>
         <div class="interior"></div>
-       <a href="" class="logo">
-         <img src="./Logos/logo hotel oficial.png" alt=""> 
+        <!--logo-->
+       <a href="" class="logo" >
+         <img src="./Logos/logo hotel oficial.png" alt="" class="animate__animated animate__fadeInRight animate__delay-1s"> 
        </a>
        <nav class="navbar">
         <input type="checkbox" id="check-menu" />
@@ -27,7 +35,7 @@
                 <a href="./index.html">INICIO</a>
               </li>
               <li>
-                <a href="./habitaciones.html">HABITACIONES</a> 
+                <a href="./habitaciones.html">GALERIA</a> 
               </li>
               <li> 
                 <a href="./tarifas.html">TARIFAS</a>
@@ -38,9 +46,8 @@
            </ul>
          </nav>
          </header>
-    <section class="tittle">
-        <h2 class="tittle2">RESERVAS</h2> 
-        <!--<img src="./Imagenes/reserva cover.jpg">-->
+    <section>
+        <!--imagen de recepcion-->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -67,10 +74,13 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+      <!--titulo de reservas-->    
+      <div class="titulo">
+        <h1>Reservas</h1>
+      </div>  
     </section>
-    </section>
-    
     <section class="formulario">
+      <div class="tabla">
         <form action="">
           <div class="mb-3">
             <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">   
@@ -88,8 +98,9 @@
             <input type="email" class="form-control" id="floatingInput" placeholder="Email">
         </div>
         <div class="mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="tipo de habitacion">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Tipo de habitacion">
         </div>
+      
         <div class="mb-3">
             <input type="number" class="form-control" id="floatingInput" placeholder="cantidad de de huespedes">
         </div>
@@ -97,7 +108,13 @@
           <button type="button" class="btn btn-danger">Enviar</button>
         </div> 
         </form>
-        <footer class="grid-container">
+      </div>  
+        <div class="logoreserva">
+          <img src="./Logos/logo hotel oficial.png" alt="" class="logo">
+        </div>
+    </section>
+        <!--footer-->
+        <footer class="footer">
           <h3 class="navegacion">
            Navegacion 
           </h3>
@@ -107,7 +124,7 @@
                       <a href="./index.html">Inicio</a>
                     </li>
                     <li>
-                      <a href="./habitaciones.html">Habitaciones</a> 
+                      <a href="./habitaciones.html">Galeria</a> 
                     </li>
                     <li>
                       <a href="./reservas.html">Reservas</a>
@@ -143,6 +160,7 @@
               <label for="instagram"><i class='bx bxl-instagram'></i></label>
               <label for="facebook"><i class='bx bxl-facebook-square'></i></label>
               <label for="tiktok"><i class='bx bxl-tiktok' ></i></box-icon></label>
+              <label for="youtube" class="youtube"><i class='bx bxl-youtube'></i></label>
             </div>
             <div class="newsletter">
             </span>

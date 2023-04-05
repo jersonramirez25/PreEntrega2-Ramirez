@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarifas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apart-hotel frente al mar en Villa Gesell">
+    <meta name="keywords" content="Hotel, hospedaje, turismo, tarifas, Villa Gesell, costa Atlantica">
+    <title>Apart-Hotel Tarifas</title>
     <!--bootstrap-->
     <link rel="stylesheet" href="./CSS/bootstrap.css">
     <!--styles-->
     <link rel="stylesheet" href="./CSS/style.css">
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <!--animaciones-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
    <!--barra de navegacion-->   
    <header>
     <div class="interior"></div>
+    <!--logo-->
    <a href="" class="logo">
-     <img src="./Logos/logo hotel oficial.png" alt=""> 
+     <img src="./Logos/logo hotel oficial.png" alt="" class="animate__animated animate__fadeInRight animate__delay-1s"> 
    </a>
    <nav class="navbar">
     <input type="checkbox" id="check-menu" />
@@ -27,7 +36,7 @@
             <a href="./index.html">INICIO</a>
           </li>
           <li>
-            <a href="./habitaciones.html">HABITACIONES</a> 
+            <a href="./habitaciones.html">GALERIA</a> 
           </li>
           <li>
             <a href="./reservas.html">RESERVAS</a>
@@ -38,9 +47,8 @@
        </ul>
      </nav>
      </header>
-    <section class="tittle">
-        <h2 class="tittle2">TARIFAS</h2> 
-        <!--<img src="./Imagenes/tarifa cover.jpg">-->
+    <section>
+    <!--imagen de recepcion-->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -67,21 +75,36 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-    </section>
+     <!--titulo de galeria-->    
+     <div class="titulo">
+      <h1>Tarifas</h1>
+    </div>   
     </section>
     <section class="tarifas">     
-          <img src="Imagenes/habitaciones/2.jpg" alt="" class="tarifa1">
-          <button class="btn btn-danger">
-            <a href="./reservas.html">Habitacion simple $5000 por noche</a> </button>
-          <img src="Imagenes/habitaciones/4.jpg" alt="" class="tarifa2">         
-          <button class="btn btn-danger">
-            <a href="./reservas.html">Habitacion suite $8000 por noche</a> </button>
-          <img src="Imagenes/habitaciones/5.jpg" alt="" class="tarifa3">
-          <button class="btn btn-danger">
-            <a href="./reservas.html">Habitacion deluxe $10000 por noche</a>
-          </button>
+          <div>
+           <img src="Imagenes/habitaciones/2.jpg" alt="" class="tarifa1">
+          </div>
+          <div class="boton1">
+           <button type="button" class="btn btn-danger">
+            <a href="./reservas.html">   
+            Habitacion simple $8000 por noche</a>
+            </button>
+          </div>
+          <div>
+           <img src="Imagenes/habitaciones/4.jpg" alt="" class="tarifa2">
+          </div>         
+         <div class="boton2">
+            <button type="button" class="btn btn-danger"><a href="./reservas.html">Habitacion suite $15000 por noche</a></button>
+          </div>
+          <div>
+           <img src="Imagenes/habitaciones/5.jpg" alt="" class="tarifa3">
+          </div>
+          <div class="boton3">
+            <button type="button" class="btn btn-danger"><a href="./reservas.html">Habitacion deluxe $25000 por noche</a></button>
+          </div>       
     </section>
-    <footer class="grid-container">
+    <!--footer-->
+    <footer class="footer">
       <h3 class="navegacion">
        Navegacion 
       </h3>
@@ -91,7 +114,7 @@
                   <a href="./index.html">Inicio</a>
                 </li>
                 <li>
-                  <a href="./habitaciones.html">Habitaciones</a> 
+                  <a href="./habitaciones.html">Galeria</a> 
                 </li>
                 <li>
                   <a href="./reservas.html">Reservas</a>
@@ -127,6 +150,7 @@
           <label for="instagram"><i class='bx bxl-instagram'></i></label>
           <label for="facebook"><i class='bx bxl-facebook-square'></i></label>
           <label for="tiktok"><i class='bx bxl-tiktok' ></i></box-icon></label>
+          <label for="youtube" class="youtube"><i class='bx bxl-youtube'></i></label>
         </div>
         <div class="newsletter">
         </span>
