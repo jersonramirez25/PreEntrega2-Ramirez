@@ -85,10 +85,10 @@ header #check-menu, header label.menu {
 .contenido {
   padding-bottom: 25px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto, repeat(3, 1fr), auto;
   grid-template-rows: 75px 100px 320px 55px 400px repeat(3, 55px);
   gap: 5px;
-  grid-template-areas: "titlehab none titleubi" "descripcion descripcion p2" "simple suite deluxe" "reservar1 reservar2 reservar3" "video video video" "servicios servicios servicios" "wifi bath tv" "bank aire cafe";
+  grid-template-areas: "titlehab none titleubi" "descripcion descripcion p2" "simple suite deluxe none" "reservar1 reservar2 reservar3" "video video video" "servicios servicios servicios" "wifi bath tv none" "bank aire cafe";
 }
 .contenido .titlehab {
   grid-area: titlehab;
@@ -546,6 +546,461 @@ footer h3 {
 
 /*mobile*/
 @media screen and (max-width: 360px) {
+  header {
+    /*titulo*/
+  }
+  header .logo {
+    float: right;
+  }
+  header .navbar {
+    float: left;
+    display: flex;
+    background-color: #C43000;
+  }
+  header .navbar ul {
+    display: none;
+    position: absolute;
+    height: 100hv;
+    top: 50px;
+    width: 100%;
+    flex-direction: column;
+    background-color: #C43000;
+    justify-content: start;
+  }
+  header .navbar label.menu {
+    display: block;
+    font-size: 1.7em;
+    color: #FCFCEF;
+    background-color: #C43000;
+  }
+  header .navbar #check-menu:checked ~ ul {
+    display: block;
+    background-color: #C43000;
+  }
+  header .navbar .navbar ul li {
+    background-color: #C43000;
+    width: 100vh;
+  }
+  header .titulo h1 {
+    font-family: nadilla;
+    font-style: italic;
+    font-size: 55px;
+    height: 75px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  /*inicio*/
+  .contenido {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 55px 130px 55px 55px repeat(3, 200px 55px) 320px 55px repeat(6, 50px);
+    gap: 5px;
+    grid-template-areas: "titlehab" "descripcion" "titleubi" "p2" "simple" "reservar1" "suite" "reservar2" "deluxe" "reservar3" "video" "servicios" "wifi" "bath" "tv" "bank" "aire" "cafe";
+  }
+  .contenido .titlehab {
+    grid-area: titlehab;
+    padding-left: 15px;
+    font-size: 25px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  .contenido .titleubi {
+    grid-area: titleubi;
+    padding-left: 15px;
+    font-size: 25px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  .contenido .descripcion {
+    grid-area: descripcion;
+    padding: 10px;
+    width: 320px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  .contenido .p2 {
+    grid-area: p2;
+    padding: 10px;
+    width: 320px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  .contenido .simple {
+    grid-area: simple;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  .contenido .suite {
+    grid-area: suite;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  .contenido .deluxe {
+    grid-area: deluxe;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  .contenido .reservar1 {
+    grid-area: reservar1;
+    display: flex;
+    align-self: start;
+    justify-self: center;
+  }
+  .contenido .reservar2 {
+    grid-area: reservar2;
+    display: flex;
+    align-self: start;
+    justify-self: center;
+  }
+  .contenido .reservar3 {
+    grid-area: reservar3;
+    display: flex;
+    align-self: start;
+    justify-self: center;
+  }
+  .contenido a {
+    color: white;
+  }
+  .contenido .video {
+    grid-area: video;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  .contenido .servicios {
+    grid-area: servicios;
+    font-size: 25px;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  .contenido .wifi {
+    grid-area: wifi;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  .contenido .bath {
+    grid-area: bath;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  .contenido .tv {
+    grid-area: tv;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  .contenido .bank {
+    grid-area: bank;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  .contenido .aire {
+    grid-area: aire;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  .contenido .cafe {
+    grid-area: cafe;
+    display: flex;
+    justify-self: start;
+    align-self: center;
+  }
+  /*footer*/
+  .footer {
+    background-color: #C43000;
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 40px 150px 50px;
+    gap: 5px;
+    grid-template-areas: "navegacion" "lista" "pago" "imgpago" "contacto" "contactlist" "redes" "redesicon" "newsletter";
+  }
+  .footer .navegacion {
+    grid-area: navegacion;
+    color: black;
+    padding-left: 15px;
+    padding-top: 15px;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .lista {
+    color: white;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .pago {
+    grid-area: pago;
+    color: black;
+    padding-left: 15px;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .imgpago {
+    width: 150px;
+    padding-left: 15px;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .contacto {
+    grid-area: contacto;
+    padding-left: 15px;
+    color: black;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .contactlist {
+    color: white;
+    padding-left: 15px;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .redes {
+    grid-area: redes;
+    color: black;
+    padding-left: 15px;
+    display: flex;
+    align-self: center;
+    justify-self: start;
+  }
+  .footer .redesicon {
+    grid-area: redesicon;
+    color: white;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  .footer a {
+    color: white;
+  }
+  .footer .newsletter {
+    grid-area: newsletter;
+    padding-bottom: 20px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  /*ubicacion*/
+  .ubicacion {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 320px;
+    grid-template-rows: 400px 250px;
+    gap: 5px;
+    grid-template-areas: "map" "direccion";
+  }
+  .map {
+    width: 320px;
+    height: 320px;
+  }
+  /*galeria*/
+  .imggaleria {
+    margin: 0;
+    padding-left: 5px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 170px);
+    grid-template-rows: repeat(8, 150px);
+    gap: 10px;
+    grid-template-areas: "hab2 hab3" "hab5 hab6" "hab7 hab9" "hab10 hab11" "hab12 comedor" "piscina reserva" "tarifa frente" "patio patio";
+  }
+  .imggaleria .hab2 {
+    grid-area: hab2;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab3 {
+    grid-area: hab3;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab5 {
+    grid-area: hab5;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab6 {
+    grid-area: hab6;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab7 {
+    grid-area: hab7;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab9 {
+    grid-area: hab9;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab10 {
+    grid-area: hab10;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab11 {
+    grid-area: hab11;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .hab12 {
+    grid-area: hab12;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .comedor {
+    grid-area: comedor;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .piscina {
+    grid-area: piscina;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .reserva {
+    grid-area: reserva;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .tarifa {
+    grid-area: tarifa;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .frente {
+    grid-area: frente;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .imggaleria .patio {
+    grid-area: patio;
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  /*reservas*/
+  .formulario {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px 220px;
+    gap: 5px;
+    grid-template-areas: "tabla" "logoreserva";
+  }
+  .formulario .tabla {
+    grid-area: tabla;
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  .formulario .logoreserva {
+    grid-area: logoreserva;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  .formulario .logoreserva img {
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+  }
+  /*tarifas*/
+  .tarifas {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 250px 60px);
+    gap: 20px;
+    grid-template-areas: "tarifa1" "boton1" "tarifa2" "boton2" "tarifa3" "boton3";
+  }
+  .tarifas .tarifa1 {
+    grid-area: tarifa1;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  .tarifas .tarifa2 {
+    grid-area: tarifa2;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  .tarifas .tarifa3 {
+    grid-area: tarifa3;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  .tarifas .boton1 {
+    grid-area: boton1;
+    display: flex;
+    justify-self: center;
+  }
+  .tarifas .boton2 {
+    grid-area: boton2;
+    display: flex;
+    justify-self: center;
+  }
+  .tarifas .boton3 {
+    grid-area: boton3;
+    display: flex;
+    justify-self: center;
+  }
+  .tarifas a {
+    color: white;
+  }
+}
+/*mobile 2*/
+@media screen and (max-width: 412px) {
   header {
     /*titulo*/
   }
