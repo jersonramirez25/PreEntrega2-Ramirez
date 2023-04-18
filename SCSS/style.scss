@@ -90,11 +90,11 @@
       grid-template-areas:
       "titlehab none titleubi" 
       "descripcion descripcion p2" 
-      "simple suite deluxe none" 
+      "simple suite deluxe" 
       "reservar1 reservar2 reservar3" 
       "video video video" 
       "servicios servicios servicios" 
-      "wifi bath tv none" 
+      "wifi bath tv" 
       "bank aire cafe";
       .titlehab{
         grid-area: titlehab;
@@ -136,7 +136,7 @@
         justify-self: center;
       }
       .simple:hover{
-        transform: scale(1.5);
+        transform: scale(1.3);
         }
       .suite{
         grid-area: suite;
@@ -147,7 +147,7 @@
         justify-self: center;
       }
       .suite:hover{
-          transform: scale(1.5);
+          transform: scale(1.3);
           }
       .deluxe{
         grid-area: deluxe;
@@ -158,7 +158,7 @@
         justify-self: center;
       }
       .deluxe:hover{
-        transform: scale(1.5);
+        transform: scale(1.3);
         }
       .reservar1{
         grid-area: reservar1;
@@ -228,6 +228,7 @@
         padding-left: 15px;
     }
   }
+  /*footer*/
     footer{
       background-color: #C43000;
       display: grid;
@@ -468,10 +469,10 @@
  /*tarifas*/
  .tarifas{
   display: grid;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, auto);
   grid-template-rows: 250px 60px;
   gap: 20px;
-  margin-left: 150px;
+  margin-top: 55px;
   margin-bottom: 55px;
   grid-template-areas:
   "tarifa1 tarifa2 tarifa3"
@@ -481,18 +482,27 @@
   width: 350px;
   height: 250px;
   border-radius: 5px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
 }
 .tarifa2{
   grid-area: tarifa2;
   width: 350px;
   height: 250px;
   border-radius: 5px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
 }
 .tarifa3{
   grid-area: tarifa3;
   width: 350px;
   height: 250px;
   border-radius: 5px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
 }
 .boton1{
   grid-area: boton1;
