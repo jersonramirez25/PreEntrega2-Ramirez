@@ -1001,7 +1001,7 @@ footer h3 {
   }
 }
 /*mobile 2*/
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 480px) {
   header {
     /*titulo*/
   }
