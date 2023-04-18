@@ -84,7 +84,7 @@
     .contenido{
       padding-bottom: 25px;
       display: grid;
-      grid-template-columns: auto, repeat(3, 1fr), auto;
+      grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 75px 100px 320px 55px 400px repeat(3, 55px);
       gap: 5px;
       grid-template-areas:
@@ -321,6 +321,7 @@
      grid-template-rows: repeat(5, 250px);
      gap: 20px;
      margin-left: 150px;
+     margin-right: 150px;
      margin-bottom: 55px;
      grid-template-areas:
      "hab2 hab3 hab5"
@@ -1062,7 +1063,7 @@ a{
 }
  }
 /*mobile 2*/
-@media screen and (max-width:412px) {
+@media screen and (max-width:414px) {
   header{
     .logo{ 
       float: right;

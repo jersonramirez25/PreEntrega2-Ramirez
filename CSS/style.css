@@ -85,7 +85,7 @@ header #check-menu, header label.menu {
 .contenido {
   padding-bottom: 25px;
   display: grid;
-  grid-template-columns: auto, repeat(3, 1fr), auto;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 75px 100px 320px 55px 400px repeat(3, 55px);
   gap: 5px;
   grid-template-areas: "titlehab none titleubi" "descripcion descripcion p2" "simple suite deluxe none" "reservar1 reservar2 reservar3" "video video video" "servicios servicios servicios" "wifi bath tv none" "bank aire cafe";
@@ -314,6 +314,7 @@ footer h3 {
   grid-template-rows: repeat(5, 250px);
   gap: 20px;
   margin-left: 150px;
+  margin-right: 150px;
   margin-bottom: 55px;
   grid-template-areas: "hab2 hab3 hab5" "hab6 hab7 hab9" "hab10 hab11 hab12" "comedor piscina reserva" "tarifa frente patio";
 }
@@ -1000,7 +1001,7 @@ footer h3 {
   }
 }
 /*mobile 2*/
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 414px) {
   header {
     /*titulo*/
   }
