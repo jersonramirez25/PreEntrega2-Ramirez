@@ -311,9 +311,10 @@ footer h3 {
 /*galeria*/
 .imggaleria {
   display: grid;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(5, 250px);
   gap: 20px;
+  margin-left: 55px;
   margin-bottom: 55px;
   grid-template-areas: "hab2 hab3 hab5" "hab6 hab7 hab9" "hab10 hab11 hab12" "comedor piscina reserva" "tarifa frente patio";
 }
@@ -323,8 +324,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .hab2 img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .hab2:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .hab3 {
   grid-area: hab3;
@@ -332,8 +338,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .hab3 img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .hab3:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .hab5 {
   grid-area: hab5;
@@ -341,8 +352,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .hab5 img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .hab5:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .hab6 {
   grid-area: hab6;
@@ -350,8 +366,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .hab6 img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .hab6:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .hab7 {
   grid-area: hab7;
@@ -359,8 +380,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .hab7 img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .hab7:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .hab9 {
   grid-area: hab9;
@@ -368,8 +394,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .hab9 img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .hab9:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .hab10 {
   grid-area: hab10;
@@ -377,8 +408,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .hab10 img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .hab10:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .hab11 {
   grid-area: hab11;
@@ -386,8 +422,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .hab11 img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .hab11:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .hab12 {
   grid-area: hab12;
@@ -395,8 +436,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .hab12 img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .hab12:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .comedor {
   grid-area: comedor;
@@ -404,8 +450,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .comedor img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .comedor:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .piscina {
   grid-area: piscina;
@@ -413,8 +464,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .piscina img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .piscina:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .reserva {
   grid-area: reserva;
@@ -422,8 +478,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .reserva img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .reserva:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .tarifa {
   grid-area: tarifa;
@@ -431,8 +492,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .tarifa img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .tarifa:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .frente {
   grid-area: frente;
@@ -440,8 +506,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .frente img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .frente:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .imggaleria .patio {
   grid-area: patio;
@@ -449,8 +520,13 @@ footer h3 {
   height: 250px;
   border-radius: 5px;
 }
+.imggaleria .patio img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
 .imggaleria .patio:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 /*tarifas*/
